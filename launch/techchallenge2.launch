@@ -1,0 +1,8 @@
+<!-- -*- mode: XML -*- -->
+<launch>
+	<include file="$(find racecar)/launch/teleop.launch"/>
+        <include file="$(find zed_wrapper)/launch/zed.launch"/>
+	<node name="ColorTracker" pkg="racecar_45" type="tracking_v2.py"/>
+	<node name="Control" pkg="racecar_45" type="controller.py"/>
+	<node name="wall_follower" pkg="racecar_45" type="wallfollower.py" />
+</launch>

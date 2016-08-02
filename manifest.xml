@@ -1,0 +1,17 @@
+<package>
+  <description brief="bw_week4">
+
+     bw_week4
+
+  </description>
+  <author>RACECAR User</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/bw_week4</url>
+  <depend package="std_msgs"/>
+  <depend package="rospy"/>
+  <depend package="roscpp"/>
+
+</package>
+
+
