@@ -63,16 +63,16 @@ class ColorTracker:
 #Make image useful
 	RGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 #HSV values for each color
-        green_lower = np.array([50, 100, 75])
-        green_upper = np.array([70, 255, 255])
-        red_lower = np.array([175, 50, 75])
-        red_upper = np.array([180, 200, 255])
-        yellow_lower = np.array([25, 50, 150])
-        yellow_upper = np.array([45, 150, 255])
-        blue_lower = np.array([110, 100, 75])
-        blue_upper = np.array([130, 200, 255])
-        pink_lower = np.array([170, 30, 75])
-        pink_upper = np.array([180, 200, 255])
+        green_lower = np.array([48, 150, 75])
+        green_upper = np.array([85, 255, 255])
+        red_lower = np.array([1, 120, 80])
+        red_upper = np.array([15,255, 254])
+        yellow_lower = np.array([35, 140, 75])
+        yellow_upper = np.array([90, 255, 255])
+        blue_lower = np.array([100, 50, 75])
+        blue_upper = np.array([135, 255, 255])
+        pink_lower = np.array([160, 20, 75])
+        pink_upper = np.array([185, 255, 255])
 
 #Create mask of each color
         green_mask = cv2.inRange(img, green_lower, green_upper)

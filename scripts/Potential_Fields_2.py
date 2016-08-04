@@ -26,7 +26,7 @@ class PotentialField:
         self.charge_laser_particle = 0.09
         self.charge_forward_boost = 26
         self.boost_distance = 0.5
-        self.p_speed = 0.013
+        self.p_speed = 0.010
         self.p_steering = 1.0
 
         # subscribe to laserscans. Force output message data to be in numpy arrays.

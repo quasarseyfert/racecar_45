@@ -1,0 +1,9 @@
+<!-- -*- mode: XML -*- -->
+<launch>
+	<include file="$(find zed_wrapper)/launch/zed.launch" /> 
+	<include file="$(find racecar)/launch/teleop.launch" />
+	<node name="PotentialField" pkg="racecar_45" type="Potential_Fields_4_1.py" />
+	<node name="BlobDetector" pkg="racecar_45" type="race_blob_detect_v1.py" />
+	<node name="Controller" pkg="racecar_45" type="speedTrapV2.py" output="screen"/>
+	<node name="Saftey" pkg="racecar_45" type="safety2.py"/>
+</launch>
